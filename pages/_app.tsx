@@ -18,6 +18,10 @@ const GlobalStyles = createGlobalStyle`
 	body{
 		font-family: "Manrope", sans-serif;
 	}
+
+	* a{
+		cursor: pointer;
+	}
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {

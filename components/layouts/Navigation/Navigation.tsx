@@ -3,9 +3,12 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
-	text-transform: uppercase;
 	font-family: Manrope;
 	font-weight: bold;
+	font-size: 13px;
+	line-height: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 
 	a {
 		text-decoration: none;

@@ -2,7 +2,7 @@ import React from 'react';
 import * as Styled from './styles';
 
 type Props = {
-	children: JSX.Element[];
+	children: JSX.Element | JSX.Element[];
 };
 
 export function Container({ children }: Props) {
