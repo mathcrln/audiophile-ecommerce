@@ -6,5 +6,5 @@ type Props = {
 };
 
 export function Container({ children }: Props) {
-	return <Styled.Container>{children}</Styled.Container>;
+	return <Styled.Container className="container">{children}</Styled.Container>;
 }

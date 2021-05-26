@@ -8,12 +8,12 @@ export default function Hero() {
 		<Styled.HeroWrapper>
 			<Container>
 				<Styled.Informations>
-					<p>NEW PRODUCT</p>
-					<h2>XX99 Mark II Headphones</h2>
-					<p>
+					<Styled.Intro>New Product</Styled.Intro>
+					<Styled.Title>XX99 Mark II Headphones</Styled.Title>
+					<Styled.Description>
 						Experience natural, lifelike audio and exceptional build quality made for
 						the passionate music enthusiast.
-					</p>
+					</Styled.Description>
 					<Button title="See Product" behavior="button" url="headphones" CTAStyle={1} />
 				</Styled.Informations>
 			</Container>

@@ -47,7 +47,7 @@ export const Span = styled.span<{ CTAStyle: 1 | 2 | 3 }>`
 			border: none;
 
 			&:hover {
-				color: ${COLORS.primary};
+				color: inherit;
 			}
 		`}
 `;

@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { COLORS, COLORS_HSL } from 'constants/';
 
 export const Wrapper = styled.header`
 	background: #191919;
-	border-bottom: 1px solid #979797;
 
 	& > div {
+		border-bottom: 1px solid hsla(${COLORS_HSL.greyLight}, 0.2);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 3rem 0;
+		padding: 40px 0;
 	}
 `;

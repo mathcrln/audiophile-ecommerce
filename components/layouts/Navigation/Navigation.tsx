@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { COLORS, COLORS_HSL } from 'constants/';
 
 const NavWrapper = styled.nav`
 	font-family: Manrope;
@@ -14,6 +15,9 @@ const NavWrapper = styled.nav`
 		text-decoration: none;
 		color: white;
 		margin: 0 1rem;
+	}
+	a:hover {
+		color: hsl(${COLORS_HSL.primary});
 	}
 `;
 
