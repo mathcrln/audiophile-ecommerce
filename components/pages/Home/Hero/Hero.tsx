@@ -14,7 +14,7 @@ export default function Hero() {
 						Experience natural, lifelike audio and exceptional build quality made for
 						the passionate music enthusiast.
 					</p>
-					<Button title="See Product" />
+					<Button title="See Product" behavior="button" url="headphones" CTAStyle={1} />
 				</Styled.Informations>
 			</Container>
 		</Styled.HeroWrapper>

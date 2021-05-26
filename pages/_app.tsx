@@ -19,6 +19,14 @@ const GlobalStyles = createGlobalStyle`
 		font-family: "Manrope", sans-serif;
 	}
 
+	button{
+		border: none;
+		padding: 0;
+		margin: 0;
+		background: none;
+		font-size: 1rem;
+	}
+
 	* a{
 		cursor: pointer;
 	}
