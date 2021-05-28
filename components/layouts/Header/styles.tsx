@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { COLORS, COLORS_HSL } from 'constants/';
+import { DEVICES, COLORS_HSL } from 'constants/';
+import { Hamburger } from 'components/common/Icons';
 
 export const Wrapper = styled.header`
 	background: #191919;
@@ -10,5 +11,14 @@ export const Wrapper = styled.header`
 		align-items: center;
 		justify-content: space-between;
 		padding: 40px 0;
+	}
+`;
+Hamburger;
+export const MenuIcon = styled(Hamburger)<{ handler: Function }>`
+	display: block;
+	cursor: pointer;
+
+	@media ${DEVICES.laptop} {
+		display: none;
 	}
 `;

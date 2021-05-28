@@ -1,25 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
-import { COLORS, COLORS_HSL } from 'constants/';
-
-const NavWrapper = styled.nav`
-	font-family: Manrope;
-	font-weight: bold;
-	font-size: 13px;
-	line-height: 25px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-
-	a {
-		text-decoration: none;
-		color: white;
-		margin: 0 1rem;
-	}
-	a:hover {
-		color: hsl(${COLORS_HSL.primary});
-	}
-`;
+import * as Styles from './styles';
 
 const links = [
 	{
@@ -39,14 +20,16 @@ const links = [
 		slug: '/earphones',
 	},
 ];
-export function Navigation() {
+export function Navigation({ menuOpen }: { menuOpen: Boolean }) {
 	return (
-		<NavWrapper>
-			{links.map((link) => (
-				<Link href={link?.slug} key={link.title}>
-					{link?.title}
-				</Link>
-			))}
-		</NavWrapper>
+		<>
+			<Styles.NavWrapper menuOpen={menuOpen}>
+				{links.map((link) => (
+					<Link href={link?.slug} key={link.title}>
+						{link?.title}
+					</Link>
+				))}
+			</Styles.NavWrapper>
+		</>
 	);
 }

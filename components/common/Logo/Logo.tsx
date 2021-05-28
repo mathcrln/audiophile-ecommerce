@@ -2,10 +2,10 @@ import Link from 'next/link';
 import React from 'react';
 
 interface LogoProps {
-	color: string;
+	color?: string;
 }
 
-export function Logo({ color }: LogoProps) {
+export function Logo({ color = '#FFF' }: LogoProps) {
 	return (
 		<Link href="/">
 			<svg
