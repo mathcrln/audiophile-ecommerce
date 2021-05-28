@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Logo } from 'components/common/Logo';
 import { Navigation } from '../Navigation';
 import { Container } from '../Container';
-import { MobileMenu, Cart } from 'components/common/Icons';
+import { Cart } from 'components/common/Icons';
 import * as Styled from './styles';
 
 export function Header() {
@@ -21,7 +20,7 @@ export function Header() {
 		<Styled.Wrapper>
 			<Container>
 				<Styled.MenuIcon handler={handleToggleMenu} />
-				<Logo />
+				<Styled.LogoLink />
 				<Navigation menuOpen={menuOpen} />
 				<Cart />
 			</Container>
