@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { COLORS } from 'constants/';
+import { COLORS, COLORS_HSL } from 'constants/';
 
 export const Button = styled.button`
 	background: none;
@@ -47,7 +47,22 @@ export const Span = styled.span<{ CTAStyle: 1 | 2 | 3 }>`
 			border: none;
 
 			&:hover {
-				color: inherit;
+				color: hsla(${COLORS_HSL.primary}, 1);
+			}
+			position: relative;
+
+			::after {
+				content: '';
+				background-image: url('/images/shared/desktop/icon-arrow-right.svg');
+				background-repeat: no-repeat;
+				vertical-align: middle;
+				background-size: 10px;
+				width: 10px;
+				height: 20px;
+				right: 1px;
+				margin: auto;
+
+				position: absolute;
 			}
 		`}
 `;

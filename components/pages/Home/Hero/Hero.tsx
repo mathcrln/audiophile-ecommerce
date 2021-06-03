@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './styles';
 import { Container } from 'components/layouts';
-import { Button } from 'components/common';
+import { LinkButton } from 'components/common/Button';
 
 export default function Hero() {
 	return (
@@ -14,7 +14,9 @@ export default function Hero() {
 						Experience natural, lifelike audio and exceptional build quality made for
 						the passionate music enthusiast.
 					</Styled.Description>
-					<Button title="See Product" behavior="button" url="headphones" CTAStyle={1} />
+					<LinkButton href="/headphones" buttonStyle={1}>
+						See Product
+					</LinkButton>
 				</Styled.Informations>
 			</Container>
 		</Styled.HeroWrapper>

@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import { MainLayout } from 'components/layouts/MainLayout';
+import { MainLayout, Container } from 'components/layouts';
 import Hero from 'components/pages/Home/Hero';
+import { AllCollections } from 'components/common/Callout';
 
 export default function Home() {
 	return (
@@ -11,11 +12,12 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<MainLayout>
-					<Hero />
-				</MainLayout>
-			</main>
+			<MainLayout>
+				<Hero />
+				<Container>
+					<AllCollections />
+				</Container>
+			</MainLayout>
 		</div>
 	);
 }

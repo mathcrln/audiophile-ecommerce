@@ -12,7 +12,7 @@ export function MainLayout({ children }: Prop) {
 	return (
 		<Styled.Wrapper>
 			<Header />
-			<main>{children}</main>
+			<main id="content">{children}</main>
 		</Styled.Wrapper>
 	);
 }
