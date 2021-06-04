@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Navigation } from '../Navigation';
+import Portal from '@reach/portal';
+// import { Navigation } from '../Navigation';
+import { MainMenu, MobileMenu } from '../Menu';
 import { Container } from '../Container';
 import { Cart } from 'components/common/Icons';
 import * as Styled from './styles';
@@ -21,7 +23,8 @@ export function Header() {
 			<Container>
 				<Styled.MenuIcon handler={handleToggleMenu} />
 				<Styled.LogoLink />
-				<Navigation menuOpen={menuOpen} />
+				<Styled.MobileNav menuOpen={menuOpen} />
+				<Styled.DesktopNav />
 				<Cart />
 			</Container>
 		</Styled.Wrapper>

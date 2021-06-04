@@ -15,7 +15,7 @@ export default function Home() {
 			<MainLayout>
 				<Hero />
 				<Container>
-					<AllCollections />
+					<AllCollections styles="margin-top: 100px;" />
 				</Container>
 			</MainLayout>
 		</div>
