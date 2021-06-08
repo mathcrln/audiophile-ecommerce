@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Header } from '../Header';
-// import { Footer } from '../Footer';
+import { Footer } from '../Footer';
+
 import * as Styled from './styles';
 
 type Prop = {
@@ -13,6 +13,7 @@ export function MainLayout({ children }: Prop) {
 		<Styled.Wrapper>
 			<Header />
 			<main id="content">{children}</main>
+			<Footer />
 		</Styled.Wrapper>
 	);
 }
