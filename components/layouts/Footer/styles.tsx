@@ -11,31 +11,32 @@ export const Footer = styled.footer`
 	padding-bottom: 48px;
 
 	p {
-		margin-bottom: 0;
 		font-family: Manrope;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 15px;
+		font-size: 0, 9375rem;
 		line-height: 25px;
-		color: #ffffff;
+		color: ${COLORS.white};
 		mix-blend-mode: normal;
 		opacity: 0.5;
 	}
 `;
+
 export const FooterTop = styled.div`
-	flex-direction: column;
 	align-items: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 
 	@media ${DEVICES.minTablet} {
 		align-items: flex-start;
 		justify-content: space-between;
 	}
+
 	@media ${DEVICES.laptop} {
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: center;
 	}
 `;
 
@@ -44,19 +45,48 @@ export const FooterMenu = styled(MainMenu)`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 48px auto;
 
 	a {
-		margin-left: 0;
+		margin-top: 16px;
+		&:first-child {
+			margin-left: 0;
+		}
 	}
 	@media ${DEVICES.minTablet} {
-		flex-direction: row;
+		display: block;
+		margin: 32px 0;
+	}
+
+	@media ${DEVICES.laptop} {
+		margin: initial;
 	}
 `;
 
 export const FooterBottom = styled.div`
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
+
+	@media ${DEVICES.minTablet} {
+		flex-direction: row;
+	}
 `;
+
+export const Description = styled.p`
+	text-align: center;
+
+	@media ${DEVICES.minTablet} {
+		text-align: left;
+		margin: 32px 0;
+	}
+
+	@media ${DEVICES.laptop} {
+		max-width: 50%;
+	}
+`;
+
 export const ColoredSeparator = styled.div`
 	background: ${COLORS.primary};
 	position: absolute;
