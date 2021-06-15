@@ -1,6 +1,8 @@
-import { Logo } from 'components/common/Logo';
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '../Container';
+import { Social } from 'components/common/Icons/Social';
+import { Logo } from 'components/common/Logo';
 import * as Styled from './styles';
 
 export function Footer() {
@@ -20,11 +22,23 @@ export function Footer() {
 				</Styled.Description>
 				<Styled.FooterBottom>
 					<p>Copyright 2021. All Rights Reserved</p>
-					<div>
-						<span>FB</span>
-						<span>TW</span>
-						<span>IG</span>
-					</div>
+					<Styled.SocialIcons>
+						<Link href="https://facebook.com" passHref>
+							<a target="_BLANK">
+								<Social platform="facebook" />
+							</a>
+						</Link>
+						<Link href="https://twitter.com" passHref>
+							<a target="_BLANK">
+								<Social platform="twitter" />
+							</a>
+						</Link>
+						<Link href="https://instagram.com" passHref>
+							<a target="_BLANK">
+								<Social platform="instagram" />
+							</a>
+						</Link>
+					</Styled.SocialIcons>
 				</Styled.FooterBottom>
 			</Container>
 		</Styled.Footer>

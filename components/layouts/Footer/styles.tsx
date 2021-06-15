@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { MainMenu } from '../Menu';
 
 export const Footer = styled.footer`
-	margin-top: 100px;
 	background: ${COLORS.greyDark};
 	color: ${COLORS.white};
 	position: relative;
 	padding-top: 75px;
 	padding-bottom: 48px;
+	margin-top: 100px;
 
 	p {
 		font-family: Manrope;
@@ -49,13 +49,15 @@ export const FooterMenu = styled(MainMenu)`
 
 	a {
 		margin-top: 16px;
-		&:first-child {
-			margin-left: 0;
-		}
 	}
 	@media ${DEVICES.minTablet} {
 		display: block;
 		margin: 32px 0;
+		a {
+			&:first-child {
+				margin-left: 0;
+			}
+		}
 	}
 
 	@media ${DEVICES.laptop} {
@@ -84,6 +86,17 @@ export const Description = styled.p`
 
 	@media ${DEVICES.laptop} {
 		max-width: 50%;
+	}
+`;
+
+export const SocialIcons = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	svg {
+		margin: 16px;
+		cursor: pointer;
 	}
 `;
 
