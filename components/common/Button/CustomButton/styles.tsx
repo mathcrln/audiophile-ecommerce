@@ -13,7 +13,7 @@ export const Span = styled.span<{ buttonStyle: 1 | 2 | 3 }>`
 	font-weight: 700;
 	letter-spacing: 1px;
 	transition: 0.7s;
-
+    display: inline-block;
 	${Arrow} {
 		display: none;
 	}
@@ -25,7 +25,7 @@ export const Span = styled.span<{ buttonStyle: 1 | 2 | 3 }>`
 			border: none;
 			color: white;
 			padding: 1rem 2rem;
-
+            
 			&:hover {
 				background-color: ${COLORS.primaryLighter};
 			}
