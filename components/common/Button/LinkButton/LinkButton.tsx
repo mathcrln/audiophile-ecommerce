@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import * as Styles from './styles';
 import { ButtonProps, CustomButton } from '../CustomButton';
 
 type LinkProps = ButtonProps & {
