@@ -3,10 +3,10 @@ import * as Styled from './styles';
 
 export type ButtonProps = {
 	children: string;
-	buttonStyle?: 1 | 2 | 3;
+	buttonStyle?: 'Orange' | 'Transparent' | 'Arrow' | 'Black';
 };
 
-export function CustomButton({ children, buttonStyle = 1 }: ButtonProps) {
+export function CustomButton({ children, buttonStyle = 'Orange' }: ButtonProps) {
 	return (
 		<span>
 			<Styled.Span buttonStyle={buttonStyle} className="callToAction">

@@ -10,16 +10,6 @@ export const COLLECTIONS = [
 		slug: '/headphones',
 	},
 	{
-		name: 'Earphones',
-		image: {
-			url: '/images/shared/desktop/image-earphones.png',
-			width: 195,
-			height: 173.78,
-			alt: '',
-		},
-		slug: '/earphones',
-	},
-	{
 		name: 'Speakers',
 		image: {
 			url: '/images/shared/desktop/image-speakers.png',
@@ -28,5 +18,15 @@ export const COLLECTIONS = [
 			alt: '',
 		},
 		slug: '/speakers',
+	},
+	{
+		name: 'Earphones',
+		image: {
+			url: '/images/shared/desktop/image-earphones.png',
+			width: 195,
+			height: 173.78,
+			alt: '',
+		},
+		slug: '/earphones',
 	},
 ];
