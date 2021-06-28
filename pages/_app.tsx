@@ -30,6 +30,10 @@ const GlobalStyles = createGlobalStyle`
 	* a{
 		cursor: pointer;
 	}
+    img{
+        max-width: 100%;
+        border-radius: inherit;
+    }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {

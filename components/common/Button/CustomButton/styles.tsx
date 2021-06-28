@@ -6,33 +6,33 @@ export const Arrow = styled(ArrowRight)`
 	margin-left: 13.3px;
 	vertical-align: middle;
 `;
-export const Span = styled.span<{ buttonStyle: 1 | 2 | 3 }>`
+export const Span = styled.span<{ buttonStyle: 'Orange' | 'Transparent' | 'Arrow' | 'Black' }>`
 	text-transform: uppercase;
 	cursor: pointer;
 	font-size: 0.8125rem;
 	font-weight: 700;
 	letter-spacing: 1px;
 	transition: 0.7s;
-    display: inline-block;
+	display: inline-block;
 	${Arrow} {
 		display: none;
 	}
 
 	${(props) =>
-		props.buttonStyle === 1 &&
+		props.buttonStyle === 'Orange' &&
 		css`
 			background-color: ${COLORS.primary};
 			border: none;
 			color: white;
 			padding: 1rem 2rem;
-            
+
 			&:hover {
 				background-color: ${COLORS.primaryLighter};
 			}
 		`}
 
 	${(props) =>
-		props.buttonStyle === 2 &&
+		props.buttonStyle === 'Transparent' &&
 		css`
 			border: 1px solid ${COLORS.black};
 			color: ${COLORS.black};
@@ -45,7 +45,7 @@ export const Span = styled.span<{ buttonStyle: 1 | 2 | 3 }>`
 		`}
 
 	${(props) =>
-		props.buttonStyle === 3 &&
+		props.buttonStyle === 'Arrow' &&
 		css`
 			background: none;
 			border: none;
@@ -56,6 +56,19 @@ export const Span = styled.span<{ buttonStyle: 1 | 2 | 3 }>`
 
 			&:hover {
 				color: hsla(${COLORS_HSL.primary}, 1);
+			}
+		`}
+
+	${(props) =>
+		props.buttonStyle === 'Black' &&
+		css`
+			background: ${COLORS.black};
+			color: ${COLORS.white};
+			padding: 1rem 2rem;
+
+			&:hover {
+				background-color: ${COLORS.grey};
+				color: ${COLORS.white};
 			}
 		`}
 `;

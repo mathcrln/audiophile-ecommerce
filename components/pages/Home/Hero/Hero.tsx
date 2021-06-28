@@ -14,7 +14,7 @@ export default function Hero() {
 						Experience natural, lifelike audio and exceptional build quality made for
 						the passionate music enthusiast.
 					</Styled.Description>
-					<LinkButton href="/headphones" buttonStyle={1}>
+					<LinkButton href="/headphones" buttonStyle="Orange">
 						See Product
 					</LinkButton>
 				</Styled.Informations>

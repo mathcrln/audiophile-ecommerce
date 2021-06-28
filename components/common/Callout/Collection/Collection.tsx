@@ -30,7 +30,7 @@ export function CollectionCallout({ name, image, slug, className }: CollectionPr
 						/>
 					</Styled.ImageWrapper>
 					<Styled.Title>{name}</Styled.Title>
-					<CustomButton buttonStyle={3}>Shop</CustomButton>
+					<CustomButton buttonStyle="Arrow">Shop</CustomButton>
 				</Styled.Wrapper>
 			</Styled.a>
 		</Link>
