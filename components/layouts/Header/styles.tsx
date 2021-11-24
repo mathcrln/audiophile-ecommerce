@@ -41,8 +41,10 @@ export const MobileNav = styled(MobileMenu)<{ menuOpen: boolean }>`
 	right: 0;
 	left: 0;
 	bottom: 0;
+	/* padding: 30px; */
+	/* background: ${COLORS.white}; */
 
-	@media ${DEVICES.laptop} {
+	@media ${DEVICES.minTablet} {
 		display: none;
 	}
 `;
@@ -50,7 +52,7 @@ export const MobileNav = styled(MobileMenu)<{ menuOpen: boolean }>`
 export const DesktopNav = styled(MainMenu)`
 	display: none;
 
-	@media ${DEVICES.laptop} {
+	@media ${DEVICES.minTablet} {
 		display: block;
 	}
 `;
