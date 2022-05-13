@@ -1,32 +1,38 @@
-import React, { useState } from 'react';
-import Portal from '@reach/portal';
-// import { Navigation } from '../Navigation';
+import React, { useEffect, useState } from 'react';
 import { MainMenu, MobileMenu } from '../Menu';
 import { Container } from '../Container';
-import { Cart } from 'components/common/Icons';
+import { Cart, Hamburger } from 'components/common/Icons';
 import * as Styled from './styles';
+import { Logo } from 'components/common/Logo';
 
 export function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const handleToggleMenu = () => {
 		if (menuOpen) {
 			setMenuOpen(false);
-			console.log('Menu closed', menuOpen);
 		} else {
 			setMenuOpen(true);
-			console.log('Menu opened', menuOpen);
 		}
 	};
 
+	useEffect(() => {
+		if (menuOpen) {
+			document.body.classList.add('overflow-y-hidden');
+			document.body.classList.add('md:overflow-y-auto');
+		} else {
+			document.body.classList.remove('overflow-y-hidden');
+		}
+	}, [menuOpen]);
+
 	return (
-		<Styled.Wrapper>
-			<Container>
-				<Styled.MenuIcon handler={handleToggleMenu} />
-				<Styled.LogoLink />
-				<Styled.MobileNav menuOpen={menuOpen} />
-				<Styled.DesktopNav />
+		<header className="bg-[#191919]">
+			<Container className="flex items-center justify-between p-10">
+				<Hamburger handler={handleToggleMenu} className="block md:hidden" />
+				<Logo className="" />
+				<MobileMenu className="block md:hidden" />
+				<MainMenu className="hidden md:block" />
 				<Cart />
 			</Container>
-		</Styled.Wrapper>
+		</header>
 	);
 }

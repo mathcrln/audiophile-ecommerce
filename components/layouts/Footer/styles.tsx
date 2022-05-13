@@ -76,30 +76,6 @@ export const FooterBottom = styled.div`
 	}
 `;
 
-export const Description = styled.p`
-	text-align: center;
-
-	@media ${DEVICES.minTablet} {
-		text-align: left;
-		margin: 32px 0;
-	}
-
-	@media ${DEVICES.laptop} {
-		max-width: 50%;
-	}
-`;
-
-export const SocialIcons = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	svg {
-		margin: 16px;
-		cursor: pointer;
-	}
-`;
-
 export const ColoredSeparator = styled.div`
 	background: ${COLORS.primary};
 	position: absolute;

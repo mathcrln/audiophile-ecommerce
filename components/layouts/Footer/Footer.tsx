@@ -14,15 +14,15 @@ export function Footer() {
 					<Logo />
 					<Styled.FooterMenu />
 				</Styled.FooterTop>
-				<Styled.Description>
+				<p className="text-center my-2 md:text-left md:my-8 lg:max-w-[50%]">
 					Audiophile is an all in one stop to fulfill your audio needs. We're a small team
 					of music lovers and sound specialists who are devoted to helping you get the
 					most out of personal audio. Come and visit our demo facility - we’re open 7 days
 					a week.
-				</Styled.Description>
+				</p>
 				<Styled.FooterBottom>
 					<p>Copyright 2021. All Rights Reserved</p>
-					<Styled.SocialIcons>
+					<div className="flex justify-between items-center space-x-8 my-4">
 						<Link href="https://facebook.com" passHref>
 							<a target="_BLANK">
 								<Social platform="facebook" />
@@ -38,7 +38,7 @@ export function Footer() {
 								<Social platform="instagram" />
 							</a>
 						</Link>
-					</Styled.SocialIcons>
+					</div>
 				</Styled.FooterBottom>
 			</Container>
 		</Styled.Footer>

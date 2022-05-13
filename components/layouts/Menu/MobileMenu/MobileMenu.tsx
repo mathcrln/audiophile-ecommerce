@@ -7,9 +7,9 @@ export function MobileMenu({ className }: { className?: string }) {
 	return (
 		<Portal>
 			<Styled.Container className={className}>
-				<Styled.Nav>
+				<nav className="bg-white p-5">
 					<AllCollections styles="margin-top: 20px;" />
-				</Styled.Nav>
+				</nav>
 			</Styled.Container>
 		</Portal>
 	);
